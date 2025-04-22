@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch";
 import { useParams } from "react-router-dom";
 function About() {
   const { id } = useParams();
-  const url = "https://restcountries.com/v3.1/alpha/" + id;
+  const url = "https://restcountries.com/v3.1/alpha/"+ id;
   const { data, isPending, error } = useFetch(url);
 
   if (isPending) {
